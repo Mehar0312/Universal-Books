@@ -1,6 +1,14 @@
 body {
   background-color: #FFF5EE;
 }
+hr{
+  background-color: #FFF5EE;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #000;
+  border-width: 5px;
+  width: 5%;
+}
 /* Fixed Navigation Section */
 #fixed {
   background-color: #FFF5EE;
@@ -8,6 +16,7 @@ body {
   top: -70px;
   width: 100%;
   transition: top 0.3s;
+  z-index: 99;
 
 }
 
@@ -60,14 +69,60 @@ body {
   z-index: -1;
   /* padding: 10px 0px 0px; */
 }
-
-/* Carousel Section */
-.carousel-image {
+.book-image {
   width: 100%;
   height: 600px;
 }
 
+/* Book Section */
+.container {
+  text-align: center;
+}
+.title-shop {
+  padding: 3% 0% 2%;
+}
+.sliding-books {
+  height: 250px;
+}
+.carousel-books {
+  padding: 0% 9%;
+  margin: 4% 0%;
+}
+.direction-button {
+  background-color: #000;
+  width: 80px;
+}
+
+/* Quotes Section */
+#quotes {
+  text-align: center;
+  padding: 5% 0%;
+}
+.quotes-inner {
+  padding: 3% 5%
+}
+.quote-size {
+  font-family: "Montserrat";
+  font-size: 75px;
+  font-weight: 250;
+}
+
+/* Address Section */
+.address {
+  background-color: #C0C0C0;
+  color: #fff;
+}
+.address-row {
+  padding: 3% 2%;
+}
+.address-shop {
+  text-align: center;
+}
+.address-map {
+  padding: 4% 2%;
+}
+
+
 .demo {
   height: 300px;
-  background-color: red;
 }
