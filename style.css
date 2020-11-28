@@ -1,13 +1,25 @@
 body {
   background-color: #FFF5EE;
 }
+
+hr{
+  background-color: #FFF5EE;
+  border-style: none;
+  border-top-style: dotted;
+  border-color: #000;
+  border-width: 5px;
+  width: 5%;
+}
+
 /* Fixed Navigation Section */
 #fixed {
   background-color: #FFF5EE;
   position: fixed;
+
   top: -70px;
   width: 100%;
   transition: top 0.3s;
+  z-index: 99;
 
 }
 
@@ -67,7 +79,363 @@ body {
   height: 600px;
 }
 
-.demo {
+/* .demo {
   height: 300px;
-  background-color: red;
+  background-color: white;
+} */
+
+@media (max-width: 768px) {
+    .carousel-inner .carousel-item > div {
+        display: none;
+    }
+    .carousel-inner .carousel-item > div:first-child {
+        display: block;
+    }
 }
+
+.carousel-inner .carousel-item.active,
+.carousel-inner .carousel-item-next,
+.carousel-inner .carousel-item-prev {
+    display: flex;
+    position: relative;
+    z-index: -1;
+
+}
+
+/* display 3 */
+@media (min-width: 768px) {
+
+    .carousel-inner .carousel-item-right.active,
+    .carousel-inner .carousel-item-next {
+      transform: translateX(33.333%);
+    }
+
+    .carousel-inner .carousel-item-left.active,
+    .carousel-inner .carousel-item-prev {
+      transform: translateX(-33.333%);
+    }
+}
+
+.carousel-inner .carousel-item-right,
+.carousel-inner .carousel-item-left{
+  transform: translateX(0);
+}
+
+/* card section */
+
+.section {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  position: relative;
+  z-index: -1;
+}
+
+.section-heading {
+  font-size: 32px;
+  font-family: "Roboto Condensed", sans-serif;
+  border-left: 3px solid black;
+  border-right: 3px solid black;
+  transition: all 0.4s;
+  display: inline-block;
+  padding: 4px 32px;
+}
+
+
+.section-heading:hover {
+  padding: 4px 48px;
+  background: red;
+  color: white;
+}
+
+.card-image {
+  transition: 0.4s;
+}
+
+
+.card .card-description {
+  padding: 0 8px;
+}
+
+#source a {
+  margin: 8px;
+  text-align: center;
+}
+
+@media (min-width: 500px) {
+  .deck {
+    width: 45%;
+  }
+  .card .deck-image img {
+    width: 100%;
+  }
+}
+
+.img-fluid {
+  height: 350px;
+}
+
+
+/* Quotes Section */
+#quotes {
+  text-align: center;
+  padding: 5% 0%;
+}
+.quotes-inner {
+  padding: 3% 5%
+}
+.quote-size {
+  font-family: "Montserrat";
+  font-size: 75px;
+  font-weight: 250;
+}
+
+/* Address Section */
+#address {
+  padding-bottom: 5%;
+}
+.address-container {
+  background-color: #C0C0C0;
+  color: #fff;
+}
+.address-row {
+  padding: 3% 2%;
+}
+.address-shop {
+  text-align: center;
+}
+.shop-pic {
+  margin-top: 7%;
+  width: 90%;
+  height: 100%;
+}
+.address-map {
+  padding: 4% 2%;
+}
+.map-loc {
+  width: 100%;
+  height: 500px;
+}
+
+/* Footer Section */
+footer {
+  background: black;
+  padding: 8px;
+  color: #eee;
+  display: flex;
+}
+
+footer a {
+  color: white;
+}
+
+#left-footer {
+  flex: auto;
+  border-right: 1px solid red;
+  padding-left: 32px;
+}
+
+#left-footer ul {
+  padding: 0;
+  list-style: none;
+  line-height: 1.5;
+}
+
+#right-footer {
+  flex: auto;
+  padding: 8px;
+  text-align: center;
+}
+
+ #social-media-footer ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  padding: 0;
+}
+
+ #social-media-footer ul li {
+  font-size: 48px;
+  padding: 16px;
+  transition: 0.4s;
+}
+
+ #social-media-footer ul li:hover .fa-youtube {
+  color: red;
+}
+
+ #social-media-footer ul li:hover .fa-facebook {
+  color: #3b5998;
+}
+
+ #social-media-footer ul li:hover .fa-github {
+  color: #bbb;
+}
+
+/*  Sign up   */ 
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
+body{font-family: 'Raleway', sans-serif ;}
+
+.tab-style{
+font-size:20px;
+width:50%;
+background-color:#f2f2f2;
+  text-align:center;
+  
+
+}
+.nav-tabs > li > a {
+    margin-right: 0px;
+    color:grey;
+}
+
+
+
+.group2 { 
+  position: relative; 
+  margin-top: 16px; 
+}
+
+.btn-block{margin-top:20px;
+margin-bottom:20px;
+font-size:18px;}
+
+.nav-tabs>li.active>a, .nav-tabs>li.active>a:focus, .nav-tabs>li.active>a:hover {   background-color:#e5ecf4;
+color:#4a89dc;}
+
+.login-shadow{-webkit-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+-moz-box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+box-shadow: 5px -5px 6px 0px rgba(82,82,82,0.52);
+  z-index:1;
+   
+}
+
+.signup-shadow{-webkit-box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+-moz-box-shadow: -5px -5px 6px 0px rgba(82,82,82,0.52);
+box-shadow: -5px 0px 6px 0px rgba(82,82,82,0.52);
+  
+}
+
+
+.modal-header{background-color:#e5ecf4;}
+
+.group { 
+  position: relative; 
+  margin-top: 30px; 
+}
+
+
+.input {
+  font-size: 18px;
+  padding: 10px 10px 10px 5px;
+  -webkit-appearance: none;
+  display: block;
+  background: none;
+  color: #636363;
+  width: 100%;
+  border: none;
+  border-radius: 0;
+  border-bottom: 1px solid #757575;
+}
+
+.input:focus { outline: none; }
+
+
+/* Label */
+
+.label {
+  color: #757575; 
+  font-size: 18px;
+  font-weight: normal;
+  position: absolute;
+  pointer-events: none;
+  left: -10px;
+  top: 10px;
+  transition: all 0.2s ease;
+}
+
+
+/* active */
+
+.input:focus ~ .label, .input.used ~ .label {
+  top: -20px;
+  transform: scale(.75); left:-15px;
+  /* font-size: 14px; */
+  color: #4a89dc;
+}
+
+
+/* Underline */
+
+.bar {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+
+.bar:before, .bar:after {
+  content: '';
+  height: 2px; 
+  width: 0;
+  bottom: 1px; 
+  position: absolute;
+  background: #4a89dc; 
+  transition: all 0.2s ease;
+}
+
+.bar:before { left: 50%; }
+
+.bar:after { right: 50%; }
+
+
+/* active */
+
+.input:focus ~ .bar:before, .input:focus ~ .bar:after { width: 50%; }
+
+
+/* Highlight */
+
+.highlight {
+  position: absolute;
+  height: 60%; 
+  width: 100px; 
+  top: 25%; 
+  left: 0;
+  pointer-events: none;
+  opacity: 0.5;
+}
+
+
+/* active */
+
+.input:focus ~ .highlight {
+  animation: inputHighlighter 0.3s ease;
+}
+
+
+@media  screen and (max-width: 767px) and (min-width: 576px){
+  #myModal{margin-left:20%;
+            margin-right:20%;}
+
+  #forgot-password{margin-left:20%;
+            margin-right:20%;}
+} 
+
+
+@media screen and (min-width: 768px) {
+  
+  #myModal .modal-dialog  {width:700px;}
+  
+  #forgot-password .modal-dialog{width:700px;}
+  
+  .modal-body{padding-left:50px;
+              padding-right:50px;}
+}
+
+
+.modal-body{background-image:url('http://res.cloudinary.com/rinma/image/upload/v1500489833/Airplane-flying-desktop-pictureproba2_rlcced.jpg');
+background-size:cover; 
+z-inedx:4;}
+
+em{display:none;}

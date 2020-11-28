@@ -10,23 +10,23 @@
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-  <link rel="stylesheet" href="style.css">
 
   <!-- Font Awesome -->
   <script defer src="https://use.fontawesome.com/releases/v5.0.7/js/all.js"></script>
 
   <!-- Bootstrap Javascript -->
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
   <!-- Fixed Navigation Section -->
   <section id="fixed">
-    <nav class="navi-fixed navbar navbar-expand-lg navbar-light">
+    <nav class="navi-fixed navbar navbar-expand-lg navbar-light" style="background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ5zYTWZ__KTj9fSjju44VwWTc0zzvZWBeo3w&usqp=CAU');">
       <a class="navbar-brand" href="index.html">
         <i class="fas fa-book fa-2x"></i>
       </a>
@@ -51,6 +51,9 @@
           <li class="nav-item">
             <a class="nav-link" href="#footer"><i class="fas fa-phone"></i> Contact</a>
           </li>
+          <li class="nav-item">
+             <button class="nav-link" href="#signup" data-toggle="modal" data-target=".log-sign">Log In/Register</button>
+          </li>
         </ul>
       </div>
       <a class="nav-link" href="#"><i class="fas fa-user-circle fa-2x user-icon"></i> </a>
@@ -71,14 +74,14 @@
         <img class="uni-pic" src="Images/Universal.jpeg" alt="Universal Books">
       </div>
       <div class="col-4 cart">
-        <a href="#"><i class="fas fa-shopping-cart fa-3x cart-icon"></i></a>
+        <a href="#"><i class="fas fa-shopping-cart fa-2x cart-icon"></i></a>
       </div>
     </div>
   </section>
 
   <!-- Navigaion Bar Section -->
   <section id="navigation">
-    <nav class="navi navbar navbar-light navbar-expand-lg">
+    <nav class="navi navbar navbar-light navbar-expand-lg" >
       <a class="navbar-brand" href="index.html">
         <i class="fas fa-book fa-2x"></i>
       </a>
@@ -95,6 +98,9 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#footer"><i class="fas fa-phone"></i> Contact</a>
+          </li>
+          <li class="nav-item">
+             <button class="nav-link" href="#signup" data-toggle="modal" data-target=".log-sign">Log In/Register</button>
           </li>
         </ul>
       </div>
@@ -122,20 +128,357 @@
   </section>
 
   <!-- Books Section -->
-  <section>
-    <div class="demo">
-      hi
+  <div class="container text-center my-3">
+    <h2 class="section-heading">MOST VISITED BOOKS</h2>
+    <div class="row mx-auto my-auto">
+        <div id="recipeCarousel" class="carousel slide w-100" data-ride="carousel">
+            <div class="carousel-inner w-100" role="listbox">
+                <div class="carousel-item active">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/41gVhoPaE5L._AC_SX184_.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/512+dA1m+EL._AC_SX368_.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/51oBkcJvDRL._AC_SX368_.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/41a+W3AFhyL._AC_SX368_.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/51fJBkae+pL._AC_SX368_.jpg">
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="col-md-4">
+                        <div class="card card-body">
+                            <img class="img-fluid" src="https://images-eu.ssl-images-amazon.com/images/I/41tdNOTCM2L._AC_SX368_.jpg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev w-auto" href="#recipeCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next w-auto" href="#recipeCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon bg-dark border border-dark rounded-circle" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
     </div>
-    <div class="demo">
-      hello
+</div>
+<div class="text-center">
+  <section class="section-heading">
+    <h2>BOOK SECTION</h2>
+  </section>
+</div>
+
+
+<!-- Card Section -->
+  <section class="section">
+    <div class="card deck">
+      <div class="card-image deck-image">
+        <img src="Images/b1.jpg" alt="Card Image">
+      </div>
+
+      <div class="card-description">
+
+        <h3>NCERT</h3>
+
+        <p>
+          widhudvhbnsjsiojdjjdjhduighquhsksxnhsjsxnuxgqwpssnwjhbwugdwdi.
+        </p>
+        <a target="_blank" href="#" class="btn btn-primary">View Category</a>
+      </div>
     </div>
-    <div class="demo">
-      hey there!
+
+    <div class="card deck">
+      <div class="card-image deck-image">
+        <img src="Images/b2.jpg" alt="Card Image">
+      </div>
+
+      <div class="card-description">
+
+        <h3>JEE</h3>
+
+        <p>
+          idhudvhbnsjsiojdjjdjhduighquhsksxnhsjsxnuxgqwpssnwjhbwugdwdi.
+        </p>
+        <a target="_blank" href="#" class="btn btn-primary">View Category</a>
+      </div>
     </div>
+    <section id="source">
+      <a href="index.html" class="btn btn-outline-primary">View All Categories</a>
+    </section>
+
+  </section>
+<!-- Quote Section -->
+  <section id="quotes">
+    <hr>
+    <div id="quotes-section" class="carousel slide carousel-fade" data-interval="300000" data-ride="carousel">
+      <div class="carousel-inner quotes-inner">
+        <div class="carousel-item active">
+          <h1 class="quote-size">It always seems impossible until it’s done</h1>
+          <p>-Nelson Mandela</p>
+        </div>
+        <div class="carousel-item">
+          <h1 class="quote-size">Motivation is what sets you in motion, habit is what keeps you going</h1>
+          <p>Jim Ryun</p>
+        </div>
+        <div class="carousel-item">
+          <h1 class="quote-size">Study the past if you want to intuit the future</h1>
+          <p>Confucius</p>
+        </div>
+        <div class="carousel-item">
+          <h1 class="quote-size">If you do not like how things are, change them</h1>
+          <p>Jim Rohn</p>
+        </div>
+        <div class="carousel-item">
+          <h1 class="quote-size">Do not let what you cannot do interfere with what you can do</h1>
+          <p>John R. Wooden</p>
+        </div>
+      </div>
+    </div>
+    <hr>
   </section>
 
+  <!-- Address Details -->
+  <section id="address">
+    <div class="container address-container">
+      <div class="row address-row">
+        <div class="address-shop col-lg-6 col-md-6">
+          <br>
+          <br>
+          <br>
+          <h3>Universal Books</h3>
+          <h5>jndoadncosanviasvndv</h5>
+          <h5>adnvosnvjnasdvnsadjd</h5>
+          <h5>kjdsnaonvoasdnvodnvo</h5>
+          <h6>9419186246</h6>
+          <h6>180001</h6>
+        </div>
+        <div class="col-lg-6 col-md-6">
+          <img class="shop-pic" src="https://lithub.com/wp-content/uploads/2018/12/11-bookstores-6-three-lives-2.w710.h473.2x.jpg" alt="shop photo">
+        </div>
+      </div>
+      <div class="address-map">
+        <iframe class="map-loc" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22038.219990141904!2d74.86647411899621!3d32.74441697468498!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1606152658280!5m2!1sen!2sin" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+    </div>
+  </section>
+  <hr>
 
-  <script src="index.js" charset="utf-8"></script>
+  <!-- Footer Section -->
+  <footer>
+    <div id="left-footer">
+      <h3>Quick Links</h3>
+      <p>
+      <ul>
+        <li>
+          <a href="index.html">Home
+          </a>
+        </li>
+        <li>
+          <a href="languages.html">Books</a>
+        </li>
+        <li>
+          <a href="projects.html">Contact</a>
+        </li>
+        <li>
+          <a href="about.html">About us</a>
+        </li>
+        <li>
+          <a href="feedback.html">Feedback</a>
+        </li>
+        <li>
+          <a href="logout.php">LOGOUT</a>
+        </li>
+      </ul>
+      </p>
+    </div>
+
+    <div id="right-footer">
+      <h3>Follow us on</h3>
+      <div id="social-media-footer">
+        <ul>
+          <li>
+            <a target="_blank" href="#">
+              <i class="fab fa-facebook"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="#">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="#">
+              <i class="fab fa-github"></i>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <p>###.</p>
+    </div>
+  </footer>
+  <!-- ########Login/Sign up ka Code ###########-->
+    <!-- Modal -->
+    <div class="modal fade bs-modal-sm log-sign" id="myModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            
+            <div class="bs-example bs-example-tabs">
+                <ul id="myTab" class="nav nav-tabs">
+                  <li id="tab1" class=" active tab-style login-shadow "><a href="#signin" data-toggle="tab">Log In</a></li>
+                  <li id="tab2" class=" tab-style "><a href="#signup" data-toggle="tab">Sign Up</a></li>
+                  
+                </ul>
+            </div>
+          <div class="modal-body">
+            <div id="myTabContent" class="tab-content">
+           
+            <div class="tab-pane fade active in" id="signin">
+                <form class="form-horizontal">
+                <fieldset>
+                <!-- Sign In Form -->
+                <!-- Text input-->
+                  
+                   <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email address</label></div>
+                  
+                  
+                <!-- Password input-->
+                <div class="group">
+    <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Password</label>
+        </div>
+    <em>minimum 6 characters</em>
+
+               <div class="forgot-link">
+                <a href="#forgot" data-toggle="modal" data-target="#forgot-password"> I forgot my password</a>
+                </div>
+                
+
+                <!-- Button -->
+                <div class="control-group">
+                  <label class="control-label" for="signin"></label>
+                  <div class="controls">
+                    <button id="signin" name="signin" class="btn btn-primary btn-block">Log In</button>
+                  </div>
+                </div>
+                </fieldset>
+                </form>
+            </div>
+              
+              
+            <div class="tab-pane fade" id="signup">
+                <form class="form-horizontal">
+                <fieldset>
+                <!-- Sign Up Form -->
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">First Name</label></div>
+                
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Last Name</label></div>
+                
+                <!-- Password input-->
+                <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email</label></div>
+                
+                <!-- Text input-->
+                <div class="group">
+    <input required="" class="input" type="password"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Password</label></div>
+                  <em>1-8 Characters</em>
+                
+                  <div class="group2">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Country</label></div>
+                
+                
+                
+                <!-- Button -->
+                <div class="control-group">
+                  <label class="control-label" for="confirmsignup"></label>
+                  <div class="controls">
+                    <button id="confirmsignup" name="confirmsignup" class="btn btn-primary btn-block">Sign Up</button>
+                  </div>
+                </div>
+                </fieldset>
+                </form>
+          </div>
+        </div>
+          </div>
+          <!--<div class="modal-footer">
+          <center>
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </center>
+          </div>-->
+        </div>
+      </div>
+    </div>
+      
+       
+
+    <!--modal2-->
+
+    <div class="modal fade bs-modal-sm" id="forgot-password" tabindex="0" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+            <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" id="myModalLabel">Password will be sent to your email</h4>
+          </div>
+          <div class="modal-body">
+            <form class="form-horizontal">
+            <fieldset>
+            <div class="group">
+    <input required="" class="input" type="text"><span class="highlight"></span><span class="bar"></span>
+        <label class="label" for="date">Email address</label></div>
+            
+            
+            <div class="control-group">
+                  <label class="control-label" for="forpassword"></label>
+                  <div class="controls">
+                    <button id="forpasswodr" name="forpassword" class="btn btn-primary btn-block">Send</button>
+                  </div>
+                </div>
+              </fieldset>
+                </form>
+              
+          </div>
+        </div>
+        
+      </div>
+    </div>
+
+  <script src="main.js" charset="utf-8"></script>
 </body>
 
 </html>
